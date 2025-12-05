@@ -3,8 +3,8 @@ Material for UCSD Bioinformatics Course ([BGGN 213](https://bioboot.github.io/bg
 
 ## Course Content
 
-- Class 04: [Bioinformatics data analysis with R]()
 - Class 05: [Data exploration and visualization in R](class05/class05.qmd)
-- Class 06: [Why, when and how of writing your own R functions]()
-- Class 07: [Introduction to machine learning for Bioinformatics 1]()
-- Class 08: [Unsupervised learning mini-project]()
+- Class 06: [Why, when and how of writing your own R functions](class06/class06.qmd)
+- Class 07: [Introduction to machine learning for Bioinformatics 1](class07/class07.qmd)
+- Class 09: [Structural Bioinformatics (pt1)](class09/class09.qmd)
+- Class 10: [Halloween Candy Mini-Project](class10/class10.qmd)

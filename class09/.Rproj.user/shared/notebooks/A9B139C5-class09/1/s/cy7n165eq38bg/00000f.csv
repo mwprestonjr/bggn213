@@ -1,0 +1,1 @@
+"0","stats[stats$`Molecular Type`==""Protein (only)"", ""Total""] / sum(stats$Total)"

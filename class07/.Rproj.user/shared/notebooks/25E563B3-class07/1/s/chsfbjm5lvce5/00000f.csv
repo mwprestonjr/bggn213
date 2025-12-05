@@ -1,0 +1,4 @@
+"0","# Create a data frame for plotting"
+"0","df <- as.data.frame(pca$x)"
+"0","df$Country <- rownames(df)"
+"0","df"

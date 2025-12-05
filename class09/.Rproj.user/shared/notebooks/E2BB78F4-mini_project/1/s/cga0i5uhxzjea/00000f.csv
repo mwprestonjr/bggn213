@@ -1,0 +1,3 @@
+"0","# drop NA column"
+"0","wisc.df <- wisc.df[,-32]"
+"0","#head(wisc.df)"

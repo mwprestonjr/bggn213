@@ -1,0 +1,4 @@
+"0","# import data with readr package"
+"0","library(readr)"
+"0","stats <- read_csv(""Data Export Summary.csv"")"
+"0","head(stats)"

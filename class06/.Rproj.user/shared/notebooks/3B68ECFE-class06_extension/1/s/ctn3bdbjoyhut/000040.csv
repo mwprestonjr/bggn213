@@ -1,0 +1,5 @@
+"0","s2.b <- run_analysis(""1AKE"")"
+"1","  Note: Accessing on-line PDB file
+"
+"1","   PDB has ALT records, taking A only, rm.alt=TRUE
+"

@@ -1,0 +1,20 @@
+"0","# install the bio3d package "
+"0","install.packages(""bio3d"")"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.5/bio3d_2.4-5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 3489938 bytes (3.3 MB)
+"
+"2","downloaded 3.3 MB
+
+"
+"1","package ‘bio3d’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\micha\AppData\Local\Temp\RtmpU3qFS0\downloaded_packages"
+"1",""
+"1","
+"

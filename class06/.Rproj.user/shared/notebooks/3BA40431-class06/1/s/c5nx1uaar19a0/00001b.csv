@@ -1,0 +1,3 @@
+"0","# import data"
+"0","table <- read.csv(""C:/Users/micha/Downloads/student_homework.csv"", row.names = 1)"
+"0","table"

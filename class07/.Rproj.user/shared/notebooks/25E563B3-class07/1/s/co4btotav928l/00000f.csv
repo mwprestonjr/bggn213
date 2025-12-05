@@ -1,0 +1,8 @@
+"0","ggplot(pca$rotation) +"
+"0","  aes(x = PC2, "
+"0","      y = reorder(rownames(pca$rotation), PC1)) +"
+"0","  geom_col(fill = ""steelblue"") +"
+"0","  xlab(""PC2 Loading Score"") +"
+"0","  ylab("""") +"
+"0","  theme_bw() +"
+"0","  theme(axis.text.y = element_text(size = 9))"

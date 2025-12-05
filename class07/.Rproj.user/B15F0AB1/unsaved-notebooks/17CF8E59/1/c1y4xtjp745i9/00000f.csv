@@ -1,0 +1,3 @@
+"0","# repeat with `beside=F`"
+"0","barplot(as.matrix(x), beside=F, col=rainbow(nrow(x)))"
+"0",""

@@ -1,0 +1,2 @@
+"0","df <- data.frame(a=1:10, b=seq(200,400,length=10),c=11:20,d=NA)"
+"0","df"

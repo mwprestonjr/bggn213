@@ -1,0 +1,5 @@
+"0","ggplot(candy) + "
+"0","  aes(pricepercent, reorder(rownames(candy), pricepercent)) + "
+"0","  geom_col() +"
+"0","  ylab('Candy name') +"
+"0","  xlab('Price percentage')"

@@ -1,0 +1,5 @@
+"0","ggplot(candy) + "
+"0","  aes(winpercent, reorder(rownames(candy), winpercent)) + "
+"0","  geom_col() +"
+"0","  ylab('Candy name') +"
+"0","  xlab('Win percentage')"

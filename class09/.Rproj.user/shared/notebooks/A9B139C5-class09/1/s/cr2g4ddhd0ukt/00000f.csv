@@ -1,0 +1,97 @@
+"0","# Download related PDB files (save locally in a new folder called ""pdbs"")"
+"0","files <- get.pdb(hits$pdb.id, path=""pdbs"", split=TRUE, gzip=TRUE)"
+"2","trying URL 'https://files.rcsb.org/download/1AKE.pdb'
+"
+"2","downloaded 349 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/6S36.pdb'
+"
+"2","downloaded 322 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/6RZE.pdb'
+"
+"2","downloaded 198 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/3HPR.pdb'
+"
+"2","downloaded 635 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/1E4V.pdb'
+"
+"2","downloaded 350 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/5EJE.pdb'
+"
+"2","downloaded 640 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/1E4Y.pdb'
+"
+"2","downloaded 320 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/3X2S.pdb'
+"
+"2","downloaded 340 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/6HAP.pdb'
+"
+"2","downloaded 166 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/6HAM.pdb'
+"
+"2","downloaded 169 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/4K46.pdb'
+"
+"2","downloaded 183 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/3GMT.pdb'
+"
+"2","downloaded 319 KB
+
+"
+"2","trying URL 'https://files.rcsb.org/download/4PZL.pdb'
+"
+"2","downloaded 1.2 MB
+
+"
+"1","  |                                                                           "
+"1","  |                                                                     |   0%"
+"1","  |                                                                           "
+"1","  |=====                                                                |   8%"
+"1","  |                                                                           "
+"1","  |===========                                                          |  15%"
+"1","  |                                                                           "
+"1","  |================                                                     |  23%"
+"1","  |                                                                           "
+"1","  |=====================                                                |  31%"
+"1","  |                                                                           "
+"1","  |===========================                                          |  38%"
+"1","  |                                                                           "
+"1","  |================================                                     |  46%"
+"1","  |                                                                           "
+"1","  |=====================================                                |  54%"
+"1","  |                                                                           "
+"1","  |==========================================                           |  62%"
+"1","  |                                                                           "
+"1","  |================================================                     |  69%"
+"1","  |                                                                           "
+"1","  |=====================================================                |  77%"
+"1","  |                                                                           "
+"1","  |==========================================================           |  85%"
+"1","  |                                                                           "
+"1","  |================================================================     |  92%"
+"1","  |                                                                           "
+"1","  |=====================================================================| 100%"
+"1","
+"

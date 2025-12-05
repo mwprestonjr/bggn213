@@ -1,0 +1,108 @@
+---
+title: "Class06 extension"
+author: "Michael Preston (PID: A53310268)"
+format: pdf
+---
+
+# Section 1: Improving analysis code by writing functions
+
+## A. 
+Improve this regular R code by abstracting the main activities in your own new
+function. Note, we will go through this example together in the formal lecture. The main
+steps should entail running through the code to see if it works, simplifying to a core
+working code snippet, reducing any calculation duplication, and finally transferring your
+new streamlined code into a more useful function for you.
+
+```{r}
+df <- data.frame(a=1:10, b=seq(200,400,length=10),c=11:20,d=NA)
+df
+```
+
+```{r}
+norm <- function(data){
+  nord_data <- (data - min(data)) / (max(data) - min(data))
+  return(nord_data)
+}
+
+df[] <- lapply(df, norm)
+df
+```
+
+## B. 
+Next improve the below example code for the analysis of protein drug interactions by
+abstracting the main activities in your own new function. Then answer questions 1 to 6
+below. It is recommended that you start a new Project in RStudio in a new directory and
+then install the bio3d package noted in the R code below (N.B. you can use the
+command install.packages("bio3d") or the RStudio interface to do this).
+Then run through the code to see if it works, fix any copy/paste errors before simplifying
+to a core working code snippet, reducing any calculation duplication, and finally
+transferring it into a more useful function for you.
+
+```{r}
+# install the bio3d package 
+# install.packages("bio3d")
+```
+
+```{r}
+# Can you improve this analysis code?
+library(bio3d)
+
+run_analysis <- function(pdb_name){
+  s <- read.pdb(pdb_name)
+  s.chainA <- trim.pdb(s, chain="A", elety="CA")
+  s.b <- s.chainA$atom$b
+  plotb3(s.b, sse=s.chainA, typ="l", ylab="Bfactor")
+  return(s.b)
+}
+
+#for (pdb_name in c("4AKE", "1AKE", "1E4Y")){
+#  run_analysis(pdb_name)
+#}
+s1.b <- run_analysis("4AKE")
+s2.b <- run_analysis("1AKE")
+s3.b <- run_analysis("1E4Y")
+```
+
+### Q1. 
+What type of object is returned from the read.pdb() function?
+```{r}
+s <- read.pdb("4AKE")
+typeof(s)
+```
+list
+
+### Q2. 
+What does the trim.pdb() function do?
+
+```{r}
+?trim.pdb()
+```
+trim.pdb() produces a new smaller PDB object, containing a subset of atoms. Here, trimmming to chain A.
+
+### Q3. 
+What input parameter would turn off the marginal black and grey rectangles in the
+plots and what do they represent in this case?
+
+```{r}
+?plotb3
+
+```
+sse. they represent where the protein's secondary structures elements occur.
+
+### Q4. 
+What would be a better plot to compare across the different proteins?
+
+A cluster dendrogram.
+
+### Q5. 
+Which proteins are more similar to each other in their B-factor trends. How could
+you quantify this? HINT: try the rbind(), dist() and hclust() functions together with a
+resulting dendrogram plot. Look up the documentation to see what each of these
+functions does.
+
+```{r}
+hc <- hclust( dist( rbind(s1.b, s2.b, s3.b) ) )
+plot(hc)
+
+```
+S2 and S3 are more similar

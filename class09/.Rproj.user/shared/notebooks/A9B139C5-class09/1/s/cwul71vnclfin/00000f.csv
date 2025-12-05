@@ -1,0 +1,4 @@
+"0","# import with basic function"
+"0",""
+"0","data <- read.csv(""Data Export Summary.csv"")"
+"0","head(data)"

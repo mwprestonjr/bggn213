@@ -1,0 +1,7 @@
+"0","norm <- function(data){"
+"0","  nord_data <- (data - min(data)) / (max(data) - min(data))"
+"0","  return(nord_data)"
+"0","}"
+"0",""
+"0","df[] <- lapply(df, norm)"
+"0","df"

@@ -1,0 +1,3 @@
+"0",""
+"0","# flextable allows for scrollable table in rendered doc"
+"0","flextable::flextable(head(candy))"

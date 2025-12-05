@@ -1,0 +1,6 @@
+"0","temp <- arrange(candy[as.logical(candy$fruity),], winpercent)"
+"0","rownames(temp)[nrow(temp)]"
+"1","[1]"
+"1"," ""Starburst"""
+"1","
+"

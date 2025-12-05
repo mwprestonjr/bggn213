@@ -1,0 +1,4 @@
+"0","# reformat table"
+"0","rownames(x) <- x[,1]"
+"0","x <- x[,-1]"
+"0","head(x)"

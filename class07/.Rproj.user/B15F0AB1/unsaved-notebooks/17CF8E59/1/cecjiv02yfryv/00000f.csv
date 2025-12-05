@@ -1,0 +1,6 @@
+"0","# plot stacked"
+"0","ggplot(x_long) +"
+"0","  aes(x = Country, y = Consumption, fill = Food) +"
+"0","  geom_col() +"
+"0","  theme_bw()"
+"0",""

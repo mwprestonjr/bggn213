@@ -1,0 +1,8 @@
+"0","ggplot(stats) +
+  aes(reorder(`Molecular Type`, -Total), Total) +
+  geom_col() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  xlab(""Molecular Type"")
+"
+"2","Error: object 'stats' not found
+"

@@ -1,0 +1,4 @@
+"0","temp <- arrange(candy[as.logical(candy$fruity),], winpercent)"
+"0","temp$competitorname[nrow(temp)]"
+"1","NULL
+"

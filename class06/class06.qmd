@@ -1,0 +1,121 @@
+---
+title: "class06"
+author: "Michael Preston"
+format: pdf
+---
+
+## Q1. 
+Write a function grade() to determine an overall grade from a vector of student homework
+assignment scores dropping the lowest single score. If a student misses a homework (i.e. has an
+NA value) this can be used as a score to be potentially dropped. Your final function should be
+adquately explained with code comments and be able to work on an example class gradebook
+such as this one in CSV format: “https://tinyurl.com/gradeinput” [3pts]
+
+
+```{r}
+# Assign scores to start
+student1 <- c(100, 100, 100, 100, 100, 100, 100, 90)
+student2 <- c(100, NA, 90, 90, 90, 90, 97, 80)
+student3 <- c(90, NA, NA, NA, NA, NA, NA, NA)
+```
+
+
+```{r}
+# define scoring funcs
+
+grade_student <- function(scores){
+  # check for NA
+  na_count <- sum(is.na(scores))
+  
+  # if no NA, drop lowest
+  if (sum(is.na(scores)) == 0) {
+    top_scores = scores[scores != min(scores)]
+  }
+  
+  # if one NA, drop it
+  else if (na_count == 1) {
+    top_scores = scores[!is.na(scores)]
+  }
+  
+  # if multiple NA, drop first
+  else {
+    top_scores = scores[-(which(is.na(scores))[1])]
+  }
+  
+  # set remaining NAs to 0
+  top_scores[is.na(top_scores)] <- 0
+    
+  # compute mean score
+  overall_grade = mean(top_scores)
+    
+  return(overall_grade)
+}
+
+# create wrapper function for table
+grade <- function(table){
+  apply(table[, sapply(table, is.numeric)], 1, grade_student)
+}
+
+```
+
+```{r}
+# score each
+for (scores in list(student1, student2, student3)) {
+  print(grade_student(scores))
+}
+```
+
+
+## Q2. 
+Using your grade() function and the supplied gradebook, Who is the top scoring student
+overall in the gradebook? [3pts]
+
+```{r}
+# import data
+table <- read.csv("C:/Users/micha/Downloads/student_homework.csv", row.names = 1)
+table
+
+```
+
+```{r}
+# score each
+overall_grade <- grade(table)
+which.max(overall_grade)
+
+```
+Student 8 scored the highest
+
+## Q3. 
+From your analysis of the gradebook, which homework was toughest on students (i.e. obtained
+the lowest scores overall? [2pts]
+```{r}
+# average each column and calc min
+average_score <- colMeans(table, na.rm = TRUE)
+which.min(average_score)
+```
+HW3 was the hardest
+
+## Q4. 
+Optional Extension: From your analysis of the gradebook, which homework was most
+predictive of overall score (i.e. highest correlation with average grade score)? [1pt]
+
+```{r}
+# correlate each
+
+# set NAs to 0
+table_clean <- table
+table_clean[is.na(table_clean)] <- 0
+
+corrs = NULL
+for (i in 1:ncol(table_clean)) {
+  corrs = c(corrs, cor(table_clean[,i], overall_grade))
+}
+which.max(corrs)
+```
+HW5 has the highest correlation with average grade score
+
+## Q5. 
+Make sure you save your Quarto document and can click the “Render” (or Rmarkdown”
+Knit”) button to generate a PDF foramt report without errors. Finally, submit your PDF
+to gradescope. [1pt]
+

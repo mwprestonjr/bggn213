@@ -1,0 +1,6 @@
+"0","ggplot(gapminder_2007) +"
+"0","  aes(x=gdpPercap, "
+"0","      y=lifeExp,"
+"0","      col=continent,"
+"0","      size=pop) +"
+"0","  geom_point(alpha=0.5)"

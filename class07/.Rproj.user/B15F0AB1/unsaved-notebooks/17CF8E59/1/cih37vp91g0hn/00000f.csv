@@ -1,0 +1,8 @@
+"0","# Create grouped bar plot"
+"0","library(ggplot2)"
+"0",""
+"0","ggplot(x_long) +"
+"0","  aes(x = Country, y = Consumption, fill = Food) +"
+"0","  geom_col(position = ""dodge"") +"
+"0","  theme_bw()"
+"0",""

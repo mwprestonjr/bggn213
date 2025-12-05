@@ -1,0 +1,12 @@
+"0","pdb_names = c(""4AKE"", ""1AKE"", ""1E4Y"", ""2ECK"")"
+"0","run_analysis(pdb_names)"
+"1","  Note: Accessing on-line PDB file
+"
+"1","  Note: Accessing on-line PDB file
+"
+"1","   PDB has ALT records, taking A only, rm.alt=TRUE
+"
+"1","  Note: Accessing on-line PDB file
+"
+"1","  Note: Accessing on-line PDB file
+"

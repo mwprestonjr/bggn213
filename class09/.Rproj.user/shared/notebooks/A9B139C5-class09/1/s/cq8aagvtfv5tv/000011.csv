@@ -1,0 +1,8 @@
+"0","# Blast search "
+"0","#b <- blast.pdb(aa)"
+"0",""
+"0","# Plot a summary of search results"
+"0","#hits <- plot(b)"
+"0",""
+"0","# List out some 'top hits'"
+"0","#head(hits$pdb.id)"

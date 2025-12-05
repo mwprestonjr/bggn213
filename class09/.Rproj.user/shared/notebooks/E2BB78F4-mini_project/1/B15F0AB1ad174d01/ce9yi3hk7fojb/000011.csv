@@ -1,0 +1,6 @@
+"0","library(ggplot2)"
+"0",""
+"0","# Plot ""PC Plot"" / ""score plot"""
+"0","ggplot(wisc.pr$x) +"
+"0","aes(x = PC1, y = PC2, col=diagnosis) +"
+"0","geom_point()"

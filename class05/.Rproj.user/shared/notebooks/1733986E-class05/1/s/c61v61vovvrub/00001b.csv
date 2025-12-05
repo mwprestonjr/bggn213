@@ -1,0 +1,5 @@
+"0","p <- ggplot(genes) +"
+"0","  aes(Condition1, Condition2, col=State) +"
+"0","  geom_point() +"
+"0","  scale_color_manual(values=c(""blue"", ""gray"", ""red""))"
+"0","p"

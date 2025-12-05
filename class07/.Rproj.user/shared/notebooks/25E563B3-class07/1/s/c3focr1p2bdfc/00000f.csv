@@ -1,0 +1,2 @@
+"0","sim_data <- rnorm(n=100, mean=0, sd=1)"
+"0","hist(sim_data)"

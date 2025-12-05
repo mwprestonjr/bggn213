@@ -1,0 +1,86 @@
+# import with basic function
+data <- read.csv("Data Export Summary.csv")
+head(data)
+# import data with readr package
+library(readr)
+stats <- read_csv("Data Export Summary.csv")
+head(stats)
+# plot barchart of molecular types
+library(ggplot2)
+ggplot(stats) +
+aes(reorder(`Molecular Type`, -Total), Total) +
+geom_col() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+xlab("Molecular Type")
+stats[stats$`Molecular Type`=="Protein (only)", "Total"] / sum(stats$Total)
+# import with basic function
+data <- read.csv("Data Export Summary.csv")
+head(data)
+# import data with readr package
+library(readr)
+stats <- read_csv("Data Export Summary.csv")
+head(stats)
+# plot barchart of molecular types
+library(ggplot2)
+ggplot(stats) +
+aes(reorder(`Molecular Type`, -Total), Total) +
+geom_col() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+xlab("Molecular Type")
+stats[stats$`Molecular Type`=="Protein (only)", "Total"] / sum(stats$Total)
+library(bio3d)
+hiv <- read.pdb("1hsg")
+hiv
+# check out data
+head(hiv$atom)
+# run Blast on chain A sequence
+chainA <- trim.pdb(hiv, chain="A")
+chainA.seq <- pdbseq(chainA)
+blast <- blast.pdb(chainA.seq)
+blast$hit.tbl
+# plot Blast results
+hits <- plot(blast)
+hits$pdb.id
+blast <- blast.pdb(chainA.seq)
+hiv$chain
+hiv['chain']
+hiv
+library(bio3d)
+hiv <- read.pdb("1hsg")
+hiv
+# check out data
+head(hiv$atom)
+hiv
+hiv$atom$chain
+unique(hiv$atom$chain)
+length(unique(hiv$atom$chain))
+hiv$atom$chain) <| unique() <| length()
+hiv$atom$chain <| unique() <| length()
+library(dlpr)
+library(dplyr)
+hiv$atom$chain <| unique() <| length()
+library(dplyr)
+hiv$atom$chain |> unique() |> length()
+# import with basic function
+data <- read.csv("Data Export Summary.csv")
+head(data)
+# import data with readr package
+library(readr)
+stats <- read_csv("Data Export Summary.csv")
+head(stats)
+# plot barchart of molecular types
+library(ggplot2)
+ggplot(stats) +
+aes(reorder(`Molecular Type`, -Total), Total) +
+geom_col() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+xlab("Molecular Type")
+stats[stats$`Molecular Type`=="Protein (only)", "Total"] / sum(stats$Total)
+library(bio3d)
+hiv <- read.pdb("1hsg")
+hiv
+# check out data
+head(hiv$atom)
+hiv$atom$chain |> unique() |> length()
+blast <- blast.pdb(chainA.seq)
+install.packages("bio3d")

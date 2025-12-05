@@ -1,0 +1,6 @@
+"0","# Make a lollipop chart of pricepercent"
+"0","ggplot(candy) +"
+"0","  aes(pricepercent, reorder(rownames(candy), pricepercent)) +"
+"0","  geom_segment(aes(yend = reorder(rownames(candy), pricepercent), "
+"0","                   xend = 0), col=my_cols) +"
+"0","  geom_point()"

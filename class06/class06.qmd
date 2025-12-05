@@ -72,7 +72,7 @@ overall in the gradebook? [3pts]
 
 ```{r}
 # import data
-table <- read.csv("C:/Users/micha/Downloads/student_homework.csv", row.names = 1)
+table <- read.csv("student_homework.csv", row.names = 1)
 table
 
 ```
